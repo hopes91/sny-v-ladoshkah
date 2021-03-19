@@ -122,8 +122,12 @@ img {
 
 main {
 	min-height: 100%;
-	padding: 2em 1em;
+	padding: 0 1em;
 	position: relative;
+}
+
+#main-index {
+	padding: 2em 1em;
 }
 
 .ornament {
@@ -141,12 +145,12 @@ main {
 #about,
 #portfolio {
 	margin: 0 auto;
-	padding: 1em 0;
 	text-align: center;
 }
 
 #about {
 	max-width: 60em;
+	padding: 0 0 1.5em 0;
 	width: 70%;
 }
 
@@ -159,6 +163,10 @@ main {
 	color: #853866;
 	font-family: 'Marck Script', sans-serif;
 	font-size: 3em;
+}
+
+#portfolio {
+	padding: 1.5em 0 1em 0;
 }
 
 .portfolio-icon {
