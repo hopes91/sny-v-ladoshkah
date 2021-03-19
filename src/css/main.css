@@ -1,6 +1,5 @@
 html,
 body,
-.container,
 #index {
 	height: 100%;
 	margin: 0;
@@ -23,22 +22,29 @@ img {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-weight: 100;
 	letter-spacing: 0.03em;
-	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	position: relative;
 }
 
 #index {
-	background: #853866 url(../../images/DSC_6346--2.jpg) 50% 0%/cover no-repeat;
-	min-height: 10em;
 	overflow: hidden;
+	position: relative;
+}
+
+.index-image {
+	background: #853866 url('../../images/DSC_6346--2.jpg') no-repeat;
+	background-size: 100% auto;
+	width: 100%;
 }
 
 .site-name {
 	left: 0;
-	margin: 0 1em;
+	margin: 0 1.5em;
 	position: absolute;
 	text-align: left;
-	top: 1.2em;
+	top: 1.5em;
 }
 
 #index .site-name {
@@ -61,10 +67,10 @@ img {
 }
 
 .navbar {
-	margin: 0 1em;
+	margin: 0 1.5em;
 	position: absolute;
 	right: 0;
-	top: 1em;
+	top: 1.2em;
 }
 
 .navbar a {
