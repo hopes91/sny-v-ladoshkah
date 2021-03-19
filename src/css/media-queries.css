@@ -68,12 +68,14 @@
 		height: 20px;
 		position: absolute;
 		right: 1.5em;
-		top: 1.3em;
+		top: 1.5em;
 		width: 35px;
 		z-index: 2;
 	}
 
-	#burger span {
+	#burger .span-one,
+	#burger .span-two,
+	#burger .span-three  {
 		background-color: #fff;
 		display: block;
 		height: 2px;
@@ -82,15 +84,15 @@
 		width: 100%;
 	}
 
-	#burger span:first-child {
+	#burger .span-one {
 		top: 0;
 	}
 
-	#burger span:nth-child(2) {
+	#burger .span-two {
 		top: 9px;
 	}
 
-	#burger span:last-child {
+	#burger .span-three {
 		bottom: 0;
 	}
 
@@ -116,18 +118,20 @@
 		text-align: center;
 	}
 
-	.span-one-active {
+	#burger .span-one-active {
+		top: 9px;
 		transform: rotate(40deg);
-		transform-origin: 10% 50%;
+		transform-origin: center;
 	}
 
 	#burger .span-two-active {
 		display: none;
 	}
 
-	.span-three-active {
+	#burger .span-three-active {
+		bottom: 9px;
 		transform: rotate(-40deg);
-		transform-origin: 10% 50%;
+		transform-origin: center;
 	}
 
 	.portfolio-icon,

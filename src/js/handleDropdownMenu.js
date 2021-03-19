@@ -22,13 +22,15 @@ const toggleBurger = event => {
   const dropMenu = event.currentTarget.nextElementSibling;
 
 	if (dropMenu.style.display !== 'block') {
-		burgerSpans[0].className = 'span-one-active';
-		burgerSpans[2].className = 'span-three-active';
+		burgerSpans[0].className = 'span-one span-one-active';
+		burgerSpans[2].className = 'span-three span-three-active';
 		setTimeout(() => {
-			burgerSpans[1].className = 'span-two-active';
+			burgerSpans[1].className = 'span-two span-two-active';
 		}, 200);
   } else {
-    burgerSpans.forEach(span => span.className = '');
+    burgerSpans[0].className = 'span-one';
+    burgerSpans[1].className = 'span-two';
+		burgerSpans[2].className = 'span-three';
   }
 
   toggleDropdownMenu();
