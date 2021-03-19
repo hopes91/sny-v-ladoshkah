@@ -211,14 +211,15 @@
 		width: 100%;
 	}
 
+	footer {
+		height: 7em;
+		text-align: center;
+	}
+
 	.contacts-icons,
 	.copyright {
 		float: none;
 		margin: 0 auto;
-	}
-
-	footer {
-		text-align: center;
 	}
 
 	.contacts-icons {
